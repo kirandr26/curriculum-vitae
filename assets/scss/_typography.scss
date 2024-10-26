@@ -14,16 +14,40 @@ h1,h2,h3,h4,h5,h6 {
 h1{
     font-size: 50px;
     line-height: 60px;
+    @media (max-width:1536px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @media (max-width:760px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 h2{
     font-size: 40px;
     line-height: 50px;
+    @media (max-width:1536px) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    @media (max-width:760px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
 }
 p {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 15px;
     color: #7c7c7c;
+    @media (max-width:1536px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    @media (max-width:760px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
     &:last-child{
         margin-bottom: 0;
     }
@@ -33,14 +57,105 @@ p {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
+        @media (max-width:760px) {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
     }
 }
 b{
     font-weight: 400;
 }
 .sectionTitle{
-    font-size: 120px;
-    line-height: 130px;
+    font-size: 11vh;
+    line-height: 12vh;
     letter-spacing: 5px;
     font-weight: 100;
+    @media (max-width:1024px) {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    @media (max-width:760px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+.resumeLink{
+    position: relative;
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: rgba($color: #fff, $alpha: 1);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    z-index: 2;
+    i{
+        margin-right: 10px;
+        z-index: 2;
+    }
+    span{
+        z-index: 2;
+    }
+}
+
+.linkBtn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    grid-gap: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 40px;
+    color: #000;
+    transition: all 400ms ease-in-out;
+    border: 1px solid transparent;
+    @media (max-width:1536px) {
+        padding: 5px 30px;
+    }
+    .circle2{
+        position: relative;
+        padding: 10px;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+        transition: all 400ms ease-in-out;
+        @media (max-width:1536px) {
+           font-size: 14px;
+        }
+    }
+    .title2{
+        transition: all 400ms ease-in-out;
+    }
+    .title-hover2{
+        position: absolute;
+        left: 90px;
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+    }
+    &:hover{
+        background-color: #000;
+        border: 1px solid #fff;
+        .circle2{
+            background: #fff;
+            color: #000;
+            transform: translateX(100px);
+        }
+        .title2{
+            opacity: 0;
+        }
+        .title-hover2{
+            opacity: 1;
+            left: 30px;
+            color: #fff;
+        }
+    }
 }

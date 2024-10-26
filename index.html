@@ -19,7 +19,11 @@
                     <h1><span class="typing-text"></span>
                     <span class="cursor">|</span></h1>
                     <p>Transforming ideas into dynamic, responsive websites. Let's build something amazing together!</p>
-                    <a href="javascript:void(0)" class="resumeLink">Download Resume</a>
+                    <a href="#" class="linkBtn">
+                        <span class="circle2"><i class="fa fa-download"></i></span>
+                        <span class="title2">Download</span>
+                        <span class="title-hover2">Click here</span>
+                      </a>
                 </div>
                 
                 
@@ -224,8 +228,22 @@
                 </div>
                </section>
                <section>
-                <p class="tag">Cantact</p> 
+                <p class="tag">Contact</p> 
                 <h2 class="endTitle">Let's get in touch.</h2>
+                <div class="contactWrap">
+                    <div class="contactCard">
+                        <p>For any openings or inquiries, please feel free to call me at</p>
+                        <a href="tel:8618875164"><i class="fa-solid fa-phone"></i> 8618875164</a>
+                    </div>
+                    <div class="contactCard">
+                        <p>For any openings or inquiries, please feel free to email me at</p>
+                        <a href="emailto:kirandr26@gmail.com"><i class="fa-solid fa-envelope"></i> kirandr26@gmail.com</a>
+                    </div>
+                    <div class="contactCard">
+                        <p>For any openings or opportunities, feel free to reach out to me here on LinkedIn.</p>
+                        <a href="https://www.linkedin.com/in/kiran-kumar-k-4bb312173/" target="_blank"><i class="fa-brands fa-linkedin"></i> Kiran Kumar K</a>
+                    </div>
+                </div>
                </section>
             </div>
         </div>
@@ -235,14 +253,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <!-- <script>
+    <script>
         $("body").niceScroll({
-            cursorcolor: "#007BFF",
+            cursorcolor: "rgba(255, 255, 255, 0.2);",
             cursorwidth: "8px",
             cursorborder: "none",
             cursorborderradius: "4px",
-            zindex: 999
+            zindex: 999,
+            smoothscroll: true,
+            scrollspeed:250,
+            mousescrollstep: 40
         });
-    </script> -->
+
+    </script>
 </body>
 </html>
